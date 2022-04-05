@@ -39,17 +39,4 @@ subprojects {
         mappings loom.officialMojangMappings()
     }
 
-    publishing {
-        repositories {
-            maven {
-                name 'Lazurite'
-                url 'https://lazurite.dev/releases'
-
-                credentials {
-                    username property('publish.lazurite.alias')
-                    password property('publish.lazurite.secret')
-                }
-            }
-        }
-    }
 }
